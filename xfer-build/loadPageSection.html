@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>LoadPageSection</title>
+	<script src="loadPageSection.js"></script>
+<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+<div id="navbar"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>
+				Hello, world!
+			</h1>
+			<p>
+				Polygamy dissembles majesty; extracts redeem polarity; causes hitherto exist. Ovations pursue wisdom, or warts inherit and condemn. Boston, botany, cakes, folony undertakes, but who shall allay? We fear not.
+			</p>
+			<p>
+				Bolivia extemporizes mackerel; borax esteems polygamy; sausages wither in the east. Creation perdu, is done; for woes inherent one can damn. Buttons, buttons, corks, geology underrates but we shall allay. My beer’s out.
+			</p>
+			<p>
+				Poultices do sometimes choke swine; tulips reduce posterity; causes leather to resist. Our notions empower wisdom, her let’s afford while we can. Butter but any cakes, fill any undertaker, we’ll wean him from his filly. We feel hot.
+			</p>
+			<p>
+				Potations do sometimes wake wines; turnips restrain passion; causes necessary to state. Infest the poor widow; her lord’s effects will be void. But dirt, bathing, etc., etc., followed unfairly, will worm him from his folly — so swear not.
+			</p>
+			<p>
+				Potatoes do sometimes make vines; turnips remain passive: cause unnecessary to state. Inform the poor widow her lad’s efforts will be vain. But diet, bathing, etc. etc., followed uniformly, will wean him from his folly — so fear not.
+			</p>
+			<div id="footer"></div>
+		</div>
+	</div>
+</div>
+<script defer>
+	(function () {
+	  loadPageSection("/navbar.htm", "#innernav", assignToTarget);
+	  function assignToTarget(source) {
+	    document.getElementById("navbar").appendChild(source);
+	  }
+	})();
+	(function () {
+	  loadPageSection("/footer.htm", "#innerfooter", assignToTarget);
+	  function assignToTarget(source) {
+	    document.getElementById("footer").appendChild(source);
+	  }
+	})();
+</script>
+</body>
+</html>
